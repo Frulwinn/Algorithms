@@ -7,11 +7,20 @@ prices = [50, 100, 20, 80]
 
 def find_max_profit(prices):
   #get current index
+  for i in range(0, len(prices)):
+    current_index = 1
 
-  #loop through the list
-  
-  #subtract current index from next element to find max profit
+    #loop through the list
+    for each_price in range(current_index):
 
+      #subtract current index from next element to find max profit
+      profit = prices[each_price] - prices[current_index]
+
+      if profit > max_profit:
+        max_profit = profit
+    return max_profit
+
+print(find_max_profit(prices))
 
 
 if __name__ == '__main__':
