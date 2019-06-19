@@ -2,8 +2,16 @@
 
 import argparse
 
+#set prices in list
+prices = [50, 100, 20, 80]
+
 def find_max_profit(prices):
-  pass
+  #get current index
+
+  #loop through the list
+  
+  #subtract current index from next element to find max profit
+
 
 
 if __name__ == '__main__':
